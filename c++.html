@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>form  creation</title>
+</head>
+<body>
+<form onsubmit="return alert_msg()">
+name:<input type="text" id="name"><br><br>
+Email: <input type="text" id="email"><br><br>
+mobile number: <input type="text" id="mobile_number"><br><br>
+Password: <input type="password" id="password"><br><br>
+<input type="submit" value="register">
+</form>
+<script>
+function alert_msg() {
+if(document.getElementById("name").value==""){
+alert("Enter your name ");
+return false;
+}
+em=document.getElementById("email").value;
+let emailpattern=/^[^]+@[^]+\.[a-z]{2,3}$/;
+if(em==""|| !em.match(emailpattern))
+{
+alert("Enter valid email  id ");
+return false;
+}
+mobile=document.getElementById("mobile_number").value;
+let mobilepattern=/^[0-9]{10}&/;
+if(mobile==""|| !mobile.match(mobilepattern)){
+alert("Enter valid mobile number");
+return false;
+}
+if(document.getElementById("password").value==""){
+alert("Enter your password");
+return false;
+}
+alert("you have Entered all details");
+return true;
+}
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

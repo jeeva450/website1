@@ -1,0 +1,40 @@
+<html>
+</html>
+<title>form  creation</title>
+<head>
+<body>
+<h2>Registrastion form</h2>
+<form onsumbit="alert_msg(()">
+name:<input type="text",id="name"><br><br>
+Email:<input type="text",id="email"><br><br>
+Password:<input type="password",id="password"><br><br>
+Password:<input type="password",id="password"><br><br>
+
+<input type="submit" value="register">
+</form>
+
+<script>
+function alert_msg(){
+if(document.getElementBYId"name").value=="")
+{
+alert("Enter your name ");
+return false;
+}
+if(document.getElementBYId"email").value=="")
+{
+alert("Enter your email");
+return false;
+}
+if(document.getElementBYId"password").value=="")
+{
+alert("Enter your password");
+return false;
+}
+//alert("you have Entered all details");
+return ture;
+}
+
+</script>
+
+</body>
+</html>
